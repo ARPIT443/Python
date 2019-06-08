@@ -1,0 +1,9 @@
+# Suppose name of file is test.py
+
+import sys
+
+#argv is a method used to store input in a list with the name of file as an first element
+print(sys.argv)
+
+# For run ---->> python3 test.py 3 5 87 hii 
+# Output will be showm in the form of list of string as --->> ['test.py' , '4' , '5' , '87' , 'hii']
