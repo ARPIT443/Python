@@ -9,7 +9,7 @@ username=input('Enter username you want to add :')
 password='hello'+username
 for i in username:
 	if i in n:
-		print('Cannot create user')
+		exit('Cannot create user')
 
 #os.system('sudo useradd  '+username)
 encpass=crypt.crypt(password,'123')
