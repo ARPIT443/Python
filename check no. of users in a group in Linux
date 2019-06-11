@@ -1,7 +1,0 @@
-# Use command  
-    getent group name_of_group
-
-or
-
-# view group details in
-    /etc/group
