@@ -1,0 +1,24 @@
+mkdir -p a/{b/{d/i/l/m,e/h/k/m},c/{f/h/k/m,g/j/k/m}}
+
+# Now change group of directory K and L [group1 for L and group2 for K]
+cd a/b/d/i
+
+# chgrp new_group_name filename/directory
+chgrp group1 l
+cd A/B/E/H
+chgrp group2 k
+
+# Apply Sticky bit and SGID on directory K
+chmod 3775 k
+
+# Change permissions of directories A,B,C,D,E,F,G for OTHERS (remove read and write permission)
+# Move to Desktop
+
+chmod 770 a
+cd a
+chmod 770 *
+cd b
+chmod 770 *
+cd ..
+cd c 
+chmod 770 *
