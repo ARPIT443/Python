@@ -29,9 +29,23 @@ elif choice == '2':
 		f.close()
 elif choice == '3':
 	fname=input('Name of file :')
-	fopen
+	f=open(fname,'r')
+	data=f.read()
+	a=data.split('\n')
+	n=1
+	for i in a:
+		print(str(n)+' ' +i)
+		n=n+1
+
+elif choice == '4':
+	fname=input('Name of file :')
+	f=open(fname,'r')
+	data=f.read()
+	a=data.split('\n')
+	for i in a:
+		print(i+'$')
 else:
-	print('lol..!!')		
+	print('wrong input')		
 	
 		
 	
