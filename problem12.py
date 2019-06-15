@@ -1,9 +1,8 @@
-import webbrowser
 import pyqrcode
 from googlesearch import search
 import os
 data=input('Enter your search--->>')
-webbrowser.open_new_tab('https://www.google.com/search?q='+data)
+
 list=[]
 for i in search(data,stop=3):
 	list.append(i)
