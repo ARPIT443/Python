@@ -1,5 +1,6 @@
 import pyttsx3
 import datetime
+import os
 sound_driver=pyttsx3.init()
 sound_driver.say("Hello,Arpit")
 sound_driver.runAndWait()
@@ -27,7 +28,9 @@ def sort(*x):
 	print(sorted(x))
 
 def module_info():
-	help('modules')
+	help('modules') #shows total modules present
+	print('Total no. modules are :')
+	print(os.system('pip3 list | wc -l'))
 
 
 
