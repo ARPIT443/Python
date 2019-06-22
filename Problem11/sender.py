@@ -8,7 +8,7 @@ s=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 
 q=0
 while q==0:
-	a=input("Enter your msg :")
+	a=input("Enter your msg:")
 	if len(a)>150:
 		print("message should be less then 150 characters")
 		a=input("Enter your msg :")
