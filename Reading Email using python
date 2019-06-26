@@ -1,8 +1,8 @@
 
 import poplib
 mailServer = 'pop.gmail.com'
-emailID = 'arpit443@gmail.com'
-emailPass = 'kaad$4193'
+emailID = 'emailid@gmail.com'
+emailPass = 'XXXXXXX'
 
 ## open connection to mail server (Secured using SSL)
 myEmailConnection = poplib.POP3_SSL(mailServer)
