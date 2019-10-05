@@ -1,5 +1,5 @@
 import  socket 
-recv_ip="192.168.1.57"
+recv_ip="192.168.1.57" # recievers ip address 
 recv_port=4444  #    0 - 1024  -- you can check free udp port netstat -nulp
 
 #  creating  udp socket
